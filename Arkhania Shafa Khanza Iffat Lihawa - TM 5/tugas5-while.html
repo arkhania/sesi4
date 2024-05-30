@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <label for="pesan">Pesan: </label>
+    <input type="text" id="pesan1"><br>
+    <label for="jumlah">Berapa kali: </label>
+    <input type="number" id="jumlah1"><br>
+    <button onClick="cetakTulisan();">Cetak!</button>
+    <div id="hasil1"></div>
+    
+    <script>
+        let pesan1 = document.getElementById('pesan').value;
+        let jumlah1 = document.getElementById('jumlah').value;
+
+        function cetakTulisan() {
+            const hasil1 = document.getElementById('hasil').value;
+            let tampung = '<ol>';
+            let i = 0;
+            while (i < jumlah); (i++); {
+                tampung = tampung + '<li>' + pesan + "</li>";
+                i++
+            }
+            tampung = tampung + '</ol>';
+
+            document.getElementById('hasil').innerHTML = tampung;
+        }
+    </script>
+</body>
+</html>
